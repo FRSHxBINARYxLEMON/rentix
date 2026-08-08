@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #0a0a0a;
+  --color-paper: #ffffff;
+  --color-accent: #e9c551;
+  --color-accent-hover: #f0d860;
+  --color-accent-bright: #ffd60a;
+  --color-accent-deep: #6b5500;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1da851;
+
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #d4d4d4;
+  --color-gray-400: #a3a3a3;
+  --color-gray-500: #737373;
+  --color-gray-600: #525252;
+  --color-gray-700: #404040;
+  --color-gray-800: #262626;
+  --color-gray-900: #171717;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+
+  --font-body: var(--font-inter);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(233, 197, 81, 0.35);
+  color: #0a0a0a;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(10, 10, 10, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(10, 10, 10, 0.45);
+}
+
+/* Brand marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Hero scroll indicator */
+@keyframes scroll-down {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  51% {
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+.animate-scroll-down {
+  animation: scroll-down 2s infinite;
+}
+
+/* Hero badge pulse dot */
+@keyframes brand-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+.animate-brand-pulse {
+  animation: brand-pulse 2s infinite;
+}
+
+/* Hide scrollbar for horizontal product rows */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Story progress (Rent in 3 simple steps) */
+@keyframes story-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.story-progress {
+  transform-origin: left;
+  animation: story-fill 7.2s linear infinite;
+}
+
+@keyframes story-circle-1 {
+  0%,
+  33.33% {
+    background-color: var(--color-accent-bright);
+    border-color: var(--color-accent-bright);
+    box-shadow: 0 0 20px 4px rgba(255, 214, 10, 0.5),
+      0 0 48px 12px rgba(255, 214, 10, 0.3);
+  }
+  33.34%,
+  100% {
+    background-color: var(--color-gray-50);
+    border-color: var(--color-gray-200);
+    box-shadow: none;
+  }
+}
+.story-circle-1 {
+  animation: story-circle-1 7.2s linear infinite;
+}
+
+@keyframes story-icon-1 {
+  0%,
+  33.33% {
+    color: var(--color-accent-deep);
+  }
+  33.34%,
+  100% {
+    color: var(--color-ink);
+  }
+}
+.story-icon-1 {
+  animation: story-icon-1 7.2s linear infinite;
+}
+
+@keyframes story-circle-2 {
+  0%,
+  33.33% {
+    background-color: var(--color-gray-50);
+    border-color: var(--color-gray-200);
+    box-shadow: none;
+  }
+  33.34%,
+  66.66% {
+    background-color: var(--color-accent-bright);
+    border-color: var(--color-accent-bright);
+    box-shadow: 0 0 20px 4px rgba(255, 214, 10, 0.5),
+      0 0 48px 12px rgba(255, 214, 10, 0.3);
+  }
+  66.67%,
+  100% {
+    background-color: var(--color-gray-50);
+    border-color: var(--color-gray-200);
+    box-shadow: none;
+  }
+}
+.story-circle-2 {
+  animation: story-circle-2 7.2s linear infinite;
+}
+
+@keyframes story-icon-2 {
+  0%,
+  33.33% {
+    color: var(--color-ink);
+  }
+  33.34%,
+  66.66% {
+    color: var(--color-accent-deep);
+  }
+  66.67%,
+  100% {
+    color: var(--color-ink);
+  }
+}
+.story-icon-2 {
+  animation: story-icon-2 7.2s linear infinite;
+}
+
+@keyframes story-circle-3 {
+  0%,
+  66.66% {
+    background-color: var(--color-gray-50);
+    border-color: var(--color-gray-200);
+    box-shadow: none;
+  }
+  66.67%,
+  100% {
+    background-color: var(--color-accent-bright);
+    border-color: var(--color-accent-bright);
+    box-shadow: 0 0 20px 4px rgba(255, 214, 10, 0.5),
+      0 0 48px 12px rgba(255, 214, 10, 0.3);
+  }
+}
+.story-circle-3 {
+  animation: story-circle-3 7.2s linear infinite;
+}
+
+@keyframes story-icon-3 {
+  0%,
+  66.66% {
+    color: var(--color-ink);
+  }
+  66.67%,
+  100% {
+    color: var(--color-accent-deep);
+  }
+}
+.story-icon-3 {
+  animation: story-icon-3 7.2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
