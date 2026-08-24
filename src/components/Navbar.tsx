@@ -101,7 +101,7 @@ export default function Navbar() {
             className={`relative flex items-center justify-center w-[42px] h-[42px] rounded-full transition-all duration-300 ${
               solid
                 ? "bg-black/5 text-ink/80 hover:bg-accent hover:text-ink"
-                : "bg-white/10 text-white/80 hover:bg-accent hover:text-ink"
+                : "bg-black/5 text-ink/80 md:bg-white/10 md:text-white/80 hover:bg-accent hover:text-ink"
             }`}
           >
             <BagIcon className="w-[22px] h-[22px]" />

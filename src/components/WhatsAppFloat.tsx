@@ -3,7 +3,7 @@ import { WhatsappIcon } from "./Icons";
 export default function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/1234567890"
+      href="https://wa.me/96181904565"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Order on WhatsApp"

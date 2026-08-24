@@ -88,19 +88,7 @@ export default function Footer() {
           </div>
         </Reveal>
 
-        <div className="pt-10 flex flex-col md:flex-row items-center justify-between gap-5 text-center">
-          <div className="flex gap-4">
-            {["IG", "X", "YT", "TK"].map((label) => (
-              <a
-                key={label}
-                href="#"
-                aria-label={label === "X" ? "Twitter" : label === "IG" ? "Instagram" : label === "YT" ? "YouTube" : "TikTok"}
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-sm text-gray-400 transition-all duration-300 hover:bg-accent hover:text-ink"
-              >
-                {label}
-              </a>
-            ))}
-          </div>
+        <div className="pt-10 text-center">
           <p className="text-sm text-gray-600">
             &copy; 2026 Rentix. All rights reserved.
           </p>

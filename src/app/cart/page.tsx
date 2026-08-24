@@ -122,7 +122,7 @@ export default function CartPage() {
                     <span className="text-xl font-extrabold">${total}/day</span>
                   </div>
                   <a
-                    href={`https://wa.me/1234567890?text=${orderMessage}`}
+                    href={`https://wa.me/96181904565?text=${orderMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2.5 bg-whatsapp text-white w-full px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-whatsapp-hover hover:-translate-y-0.5"

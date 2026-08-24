@@ -30,17 +30,15 @@ export const metadata: Metadata = {
 const contactMethods = [
   {
     title: "Email",
-    value: "hello@rentix.co",
+    value: "alireda.elzein@gmail.com",
     icon: MailIcon,
   },
   {
     title: "Phone",
-    value: "+1 (555) 234-5678",
+    value: "+961 81 904 565",
     icon: PhoneIcon,
   },
 ];
-
-const socials = ["IG", "X", "YT", "TK"];
 
 const contactJsonLd = [
   {
@@ -55,24 +53,21 @@ export default function ContactPage() {
   return (
     <>
       <main className="relative min-h-screen flex flex-col lg:flex-row">
-        <div className="relative w-full lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:w-1/2">
+        <div className="hidden relative w-full lg:block lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:w-1/2">
           <video
             src="/vid/studio-preview.mp4"
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-screen lg:h-full object-cover"
+            className="w-full h-full object-cover"
           />
-          <div className="lg:hidden absolute top-20 left-6">
-            <BackButton light />
-          </div>
         </div>
 
         <div className="relative w-full lg:w-1/2 px-6 lg:px-14 py-12 lg:py-0 flex flex-col justify-center">
           <div className="max-w-[560px] mx-auto lg:mx-0 w-full">
             <Reveal>
-              <div className="hidden lg:block mb-8">
+              <div className="mb-8">
                 <BackButton />
               </div>
               <h1 className="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-tight leading-tight mb-5">
@@ -100,31 +95,6 @@ export default function ContactPage() {
                     </div>
                   </div>
                 ))}
-              </div>
-              <div className="mt-10 pt-8 border-t border-gray-100">
-                <h4 className="text-[0.95rem] font-semibold mb-4">
-                  Follow us
-                </h4>
-                <div className="flex gap-3">
-                  {socials.map((label) => (
-                    <a
-                      key={label}
-                      href="#"
-                      aria-label={
-                        label === "X"
-                          ? "Twitter"
-                          : label === "IG"
-                            ? "Instagram"
-                            : label === "YT"
-                              ? "YouTube"
-                              : "TikTok"
-                      }
-                      className="w-11 h-11 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-sm font-medium text-ink/70 transition-all duration-300 hover:bg-accent hover:text-ink"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </div>
               </div>
             </Reveal>
           </div>

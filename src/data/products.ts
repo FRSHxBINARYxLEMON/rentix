@@ -1,4 +1,4 @@
-export interface Product {
+﻿export interface Product {
   id: string;
   name: string;
   category: string;
@@ -17,7 +17,7 @@ export const products: Product[] = [
     price: 85,
     tag: "Popular",
     image:
-      "https://m.media-amazon.com/images/I/71BaBwNek-L.jpg",
+      "/imgs/products/sony-a7iv.jpg",
     description:
       "The Sony A7 IV is a full-frame mirrorless camera that delivers outstanding image quality and versatile video capabilities. With its 33MP Exmor R sensor, advanced autofocus system, and 4K 60p recording, it's the perfect all-rounder for photographers and filmmakers who demand reliability and performance.",
     specs: [
@@ -36,7 +36,7 @@ export const products: Product[] = [
     price: 120,
     tag: "Best Seller",
     image:
-      "https://m.media-amazon.com/images/I/61pwOXV2e+L.jpg",
+      "/imgs/products/aputure-300d.jpg",
     description:
       "The Aputure 300d Mark II is a powerful daylight-balanced LED light with an output of 4500 lux at 3 meters. This kit includes the light head, controller, reflector, and a sturdy C-stand, making it ideal for interviews, narrative work, and commercial productions.",
     specs: [
@@ -55,7 +55,7 @@ export const products: Product[] = [
     price: 45,
     tag: null,
     image:
-      "https://m.media-amazon.com/images/I/61Q2EoaOogL.jpg",
+      "/imgs/products/rode-ntg5.jpg",
     description:
       "The RODE NTG5 is an ultra-lightweight shotgun microphone designed for professional film and broadcast work. With a supercardioid polar pattern, low self-noise, and a smooth, natural frequency response, it excels at capturing dialogue and ambient sound in any environment.",
     specs: [
@@ -74,7 +74,7 @@ export const products: Product[] = [
     price: 75,
     tag: "New",
     image:
-      "https://m.media-amazon.com/images/I/41FolrBdspL.jpg",
+      "/imgs/products/dji-rs3-pro.jpg",
     description:
       "The DJI RS 3 Pro is a professional 3-axis gimbal stabilizer for cinema cameras and DSLRs. Featuring LiDAR focusing, a 4.5kg payload capacity, and advanced stabilization algorithms, it enables buttery-smooth tracking shots, vertical mode, and time-lapse movements.",
     specs: [
@@ -93,7 +93,7 @@ export const products: Product[] = [
     price: 110,
     tag: null,
     image:
-      "https://m.media-amazon.com/images/I/71hpUUcC5uL.jpg",
+      "/imgs/products/canon-r5.jpg",
     description:
       "The Canon EOS R5 is a flagship mirrorless camera with a 45MP sensor, 8K RAW video, and up to 20fps burst shooting. Ideal for high-end photography, commercial work, and cinematic video production.",
     specs: [
@@ -112,7 +112,7 @@ export const products: Product[] = [
     price: 40,
     tag: null,
     image:
-      "https://m.media-amazon.com/images/I/61KDAKAGNqL.jpg",
+      "/imgs/products/godox-sl200.jpg",
     description:
       "The Godox SL200III is a compact 200W daylight LED video light with Bowens mount. Features include built-in cooling, 11 scene effects, and app control via the Godox Light app. A versatile and budget-friendly option for any production.",
     specs: [
@@ -131,7 +131,7 @@ export const products: Product[] = [
     price: 55,
     tag: "Popular",
     image:
-      "https://m.media-amazon.com/images/I/71LYHO3+wnL.jpg",
+      "/imgs/products/shure-sm7b.jpg",
     description:
       "The Shure SM7B is a legendary dynamic microphone used by podcasters, broadcasters, and musicians worldwide. Its smooth, warm vocal reproduction and excellent shielding against electromagnetic hum make it a studio essential.",
     specs: [
@@ -150,7 +150,7 @@ export const products: Product[] = [
     price: 200,
     tag: "Premium",
     image:
-      "https://m.media-amazon.com/images/I/61U89OHG7bL.jpg",
+      "/imgs/products/dji-ronin4d.jpg",
     description:
       "The DJI Ronin 4D is an all-in-one cinema camera with built-in 4-axis stabilization, LiDAR autofocus, and a full-frame 6K sensor. A complete filmmaking solution that eliminates the need for separate camera and gimbal setups.",
     specs: [
@@ -169,7 +169,7 @@ export const products: Product[] = [
     price: 95,
     tag: null,
     image:
-      "https://m.media-amazon.com/images/I/612OBztYM1L.jpg",
+      "/imgs/products/sony-fx30.jpg",
     description:
       "The Sony FX30 is a Super 35mm cinema camera designed for content creators and indie filmmakers. It shoots 4K 120fps, features S-Cinetone color science, and has professional audio inputs in a compact, gimbal-friendly body.",
     specs: [
@@ -188,7 +188,7 @@ export const products: Product[] = [
     price: 65,
     tag: "New",
     image:
-      "https://m.media-amazon.com/images/I/51cgEbfAmfL.jpg",
+      "/imgs/products/nanlite-forza-60c.jpg",
     description:
       "The Nanlite Forza 60C is a compact RGBWW LED point light with full-color mixing, 0-100% dimming, and built-in effects. Perfect for creative lighting, color washes, and accent lighting on set.",
     specs: [
@@ -207,7 +207,7 @@ export const products: Product[] = [
     price: 40,
     tag: null,
     image:
-      "https://m.media-amazon.com/images/I/61-EIJ6w0nL.jpg",
+      "/imgs/products/sennheiser-mke600.jpg",
     description:
       "The Sennheiser MKE 600 is a professional shotgun microphone with excellent directionality and a warm, natural sound. It can be powered by phantom power or a single AA battery, making it ideal for both studio and field recording.",
     specs: [
@@ -226,7 +226,7 @@ export const products: Product[] = [
     price: 20,
     tag: null,
     image:
-      "https://m.media-amazon.com/images/I/614OTbNfm7L.jpg",
+      "/imgs/products/smallrig-cage-kit.jpg",
     description:
       'A universal camera cage kit with top handle, baseplate, and multiple 1/4"-20 and 3/8"-16 mounting points. Protects your camera while providing endless options for mounting monitors, microphones, lights, and other accessories.',
     specs: [
@@ -245,7 +245,7 @@ export const products: Product[] = [
     price: 50,
     tag: null,
     image:
-      "https://m.media-amazon.com/images/I/61bzImxx1mL.jpg",
+      "/imgs/products/atomos-ninja-v.jpg",
     description:
       "The Atomos Ninja V is a 5.2-inch HDR monitor-recorder with 1000 nits brightness and support for Apple ProRes RAW recording. Essential for critical focus pulling, exposure monitoring, and high-quality external recording.",
     specs: [

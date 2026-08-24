@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable}`}>
       <body className="min-h-screen bg-paper text-ink antialiased">
         <CartProvider>{children}</CartProvider>
       </body>

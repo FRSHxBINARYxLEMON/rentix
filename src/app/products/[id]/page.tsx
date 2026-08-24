@@ -132,7 +132,7 @@ export default async function ProductDetailPage({ params }: DetailPageProps) {
                 </ul>
                 <div className="flex flex-col gap-3">
                   <a
-                    href={`https://wa.me/1234567890?text=${encodeURIComponent(waMessage)}`}
+                    href={`https://wa.me/96181904565?text=${encodeURIComponent(waMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2.5 bg-whatsapp text-white w-full px-8 py-4 rounded-full font-semibold text-base transition-all duration-300 hover:bg-whatsapp-hover hover:-translate-y-0.5"

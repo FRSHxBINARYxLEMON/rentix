@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ComponentType } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
@@ -191,9 +192,9 @@ const homeJsonLd = [
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+1-555-234-5678",
+      telephone: "+961 81 904 565",
       contactType: "customer service",
-      email: "hello@rentix.co",
+      email: "alireda.elzein@gmail.com",
     },
   },
   {
@@ -202,8 +203,8 @@ const homeJsonLd = [
     name: "Rentix",
     image: "https://rentix.co/imgs/rentix-logo.svg",
     url: "https://rentix.co",
-    telephone: "+1-555-234-5678",
-    email: "hello@rentix.co",
+    telephone: "+961 81 904 565",
+    email: "alireda.elzein@gmail.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "123 Creator Lane, Suite 400",
@@ -321,7 +322,20 @@ export default function HomePage() {
           </div>
 
           <div className="relative z-20 w-full text-center text-white px-6">
-            <div className="inline-flex items-center gap-4 px-5 py-2.5 bg-white/10 backdrop-blur-md border border-white/15 rounded-full mb-7">
+            <div className="flex items-center justify-center gap-2.5 mb-3">
+              <Image
+                src="/imgs/truck-icon.svg"
+                alt=""
+                width={22}
+                height={22}
+                unoptimized
+                className="w-[22px] h-[22px] invert-[0.62]"
+              />
+              <p className="text-base md:text-lg font-medium tracking-wide text-gray-400">
+                Available across all Lebanon for delivery
+              </p>
+            </div>
+            <div className="hidden items-center gap-4 px-5 py-2.5 bg-white/10 backdrop-blur-md border border-white/15 rounded-full mb-7">
               <div className="flex -space-x-2.5">
                 {["JK", "SP", "MT"].map((initials) => (
                   <span
@@ -486,17 +500,17 @@ export default function HomePage() {
               <div className="relative max-w-[900px] mx-auto">
                 <div
                   aria-hidden
-                  className="absolute left-0 right-0 top-[22px] md:top-[30px] h-1 rounded-full bg-gray-100"
+                  className="hidden md:block absolute left-0 right-0 top-[30px] h-1 rounded-full bg-gray-100"
                 />
                 <div
                   aria-hidden
-                  className="absolute left-0 right-0 top-[22px] md:top-[30px] h-1 rounded-full bg-accent-bright story-progress"
+                  className="hidden md:block absolute left-0 right-0 top-[30px] h-1 rounded-full bg-accent-bright story-progress"
                 />
-                <div className="flex items-start">
+                <div className="flex flex-col gap-10 items-start md:flex-row md:gap-0">
                   {steps.map((step, i) => (
                     <div
                       key={step.title}
-                      className="flex-1 text-center px-2 md:px-7"
+                      className="flex-1 w-full text-center px-2 md:px-7"
                     >
                       <div
                         className={`relative z-10 mx-auto mb-6 md:mb-8 flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full border border-gray-200 bg-gray-50 text-ink story-circle-${
